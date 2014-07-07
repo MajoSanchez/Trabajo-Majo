@@ -19,6 +19,10 @@
   <strong>Cargo empleado:</strong>
   <%= @person.cargo_empleado %>
 </p>
+<p>
+  <strong>Número de documentos:</strong>
+  <%= @person.documents.count %>
+</p>
 
 <%= link_to 'Edit', edit_person_path(@person) %> |
 <%= link_to 'Back', people_path %>
