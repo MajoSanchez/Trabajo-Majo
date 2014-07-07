@@ -4,7 +4,10 @@
   <strong>Nombre:</strong>
   <%= @document_type.nombre %>
 </p>
-
+<p>
+  <strong>Numero de documentos:</strong>
+  <%= @document_type.documents.count %>
+</p>
 <p>
   <strong>Descripcion:</strong>
   <%= @document_type.descripcion %>
