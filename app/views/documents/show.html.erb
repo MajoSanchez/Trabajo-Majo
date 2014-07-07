@@ -17,12 +17,12 @@
 
 <p>
   <strong>Person:</strong>
-  <%= link_to @document.person.nombre, {controller: 'people', action: 'show'}, id: @document.person.id %>
+  <%= link_to @document.person.nombre, @document.person %>
 </p>
 
 <p>
   <strong>Document type:</strong>
-  <%= link_to @document.document_type.nombre, {controller: 'document_types', action: 'show'}, id: @document.document_type.id %>
+  <%= link_to @document.document_type.nombre, @document.document_type %>
 </p>
 
 <%= link_to 'Edit', edit_document_path(@document) %> |
