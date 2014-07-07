@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @document.nombre %>
+</p>
+
+<p>
+  <strong>Clave:</strong>
+  <%= @document.clave %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @document.fecha %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= link_to @document.person.nombre, {controller: 'people', action: 'show'}, id: @document.person.id %>
+</p>
+
+<p>
+  <strong>Document type:</strong>
+  <%= link_to @document.document_type.nombre, {controller: 'document_types', action: 'show'}, id: @document.document_type.id %>
+</p>
+
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %>
